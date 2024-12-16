@@ -131,7 +131,7 @@ export const DATA = {
   education: [
     {
       school: "Universidad del Valle",
-      href: "https://univalle.edu",
+      href: "https://www.univalle.edu/",
       degree: "Bachelor's in Systems Engineering",
       logoUrl: "/univalle.webp", // Add logo URL
       start: "2020",
@@ -139,7 +139,7 @@ export const DATA = {
     },
     {
       school: "Makers Fellowship",
-      href: "https://makers.com",
+      href: "https://makers.build",
       degree: "Coding Fellowship",
       logoUrl: "/makers-fellowship.webp", // Add logo URL
       start: "2023",

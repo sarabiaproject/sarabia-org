@@ -73,7 +73,7 @@ export const DATA = {
       badges: [],
       location: "Remote/Hybrid",
       title: "Product Engineer",
-      logoUrl: "/inbound-tools.webp", // Add logo URL
+      logoUrl: "/inbound-tools.webp",
       start: "September 2024",
       end: "Present",
       description:
@@ -85,23 +85,11 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Founding Engineer",
-      logoUrl: "/squads-ventures.webp", // Add logo URL
+      logoUrl: "/squads-ventures.webp",
       start: "June 2024",
       end: "Present",
       description:
         "Spearheading the creation of innovative tech startups, including Inbound Tools and Boris Returns, leveraging SaaS and AI to build scalable businesses.",
-    },
-    {
-      company: "Boring Inc.",
-      href: "https://boring.lat",
-      badges: [],
-      location: "Remote",
-      title: "Co-Founder & CEO",
-      logoUrl: "/boring.webp", // Add logo URL
-      start: "September 2023",
-      end: "Present",
-      description:
-        "As the sole technical lead and CTO, developed and managed AI-integrated web and mobile applications, delivering smart automation and tailored solutions to clients worldwide.",
     },
     {
       company: "Boris Returns",
@@ -109,11 +97,23 @@ export const DATA = {
       badges: [],
       location: "Hybrid",
       title: "Product Engineer",
-      logoUrl: "/boris-returns.webp", // Add logo URL
+      logoUrl: "/boris-returns.webp",
       start: "June 2024",
       end: "September 2024",
       description:
         "Engineered SaaS products for logistics optimization under SquadS Ventures, focusing on scalability and operational efficiency.",
+    },
+    {
+      company: "Boring Inc.",
+      href: "https://boring.lat",
+      badges: [],
+      location: "Remote",
+      title: "Co-Founder & CEO",
+      logoUrl: "/boring.webp",
+      start: "September 2023",
+      end: "Present",
+      description:
+        "As the sole technical lead and CTO, developed and managed AI-integrated web and mobile applications, delivering smart automation and tailored solutions to clients worldwide.",
     },
     {
       company: "Domu",
@@ -121,7 +121,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Fullstack AI Engineer",
-      logoUrl: "/domu.webp", // Add logo URL
+      logoUrl: "/domu.webp",
       start: "April 2023",
       end: "September 2023",
       description:

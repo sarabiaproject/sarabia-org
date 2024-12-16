@@ -2,12 +2,10 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import Markdown from "react-markdown";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -19,6 +17,7 @@ interface ResumeCardProps {
   period: string;
   description?: string;
 }
+
 export const ResumeCard = ({
   logoUrl,
   altText,
@@ -29,78 +28,48 @@ export const ResumeCard = ({
   period,
   description,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
-      setIsExpanded(!isExpanded);
-    }
-  };
-
   return (
-    <Link
-      href={href || "#"}
-      className="block cursor-pointer"
-      onClick={handleClick}
-    >
-      <Card className="flex hover:bg-muted/50 border-0 shadow-none">
-        <div className="flex-none flex items-center justify-center px-6">
-          <Avatar className="size-12 bg-muted dark:bg-foreground">
+    <Card className="group flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
+      <Link href={href || "#"} target="_blank" className="block cursor-pointer">
+        <div className="flex items-center p-4">
+          <Avatar className="size-12 bg-muted dark:bg-foreground transition-transform duration-300 group-hover:scale-105">
             <AvatarImage src={logoUrl} alt={altText} />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
-        </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+          <div className="ml-4 flex-grow">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-base group-hover:text-primary transition-colors duration-300">
                 {title}
-                {badges && (
-                  <span className="inline-flex gap-x-1">
-                    {badges.map((badge, index) => (
-                      <Badge
-                        variant="secondary"
-                        className="align-middle text-xs"
-                        key={index}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </span>
-                )}
-                <ChevronRightIcon
-                  className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0",
-                  )}
-                />
-              </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-                {period}
-              </div>
+              </CardTitle>
+              <ChevronRight className="h-5 w-5 transform transition-transform duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1" />
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-          </CardHeader>
-          {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
-
-                height: isExpanded ? "auto" : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
-            >
-              {description}
-            </motion.div>
-          )}
+            <time className="font-sans text-xs text-muted-foreground">
+              {period}
+            </time>
+          </div>
         </div>
-      </Card>
-    </Link>
+      </Link>
+      <CardContent className="px-4 pt-0">
+        {description && (
+          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+            {description}
+          </Markdown>
+        )}
+        {badges && badges.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {badges.map((badge, index) => (
+              <Badge
+                key={index}
+                variant="secondary"
+                className="px-1 py-0 text-[10px]"
+              >
+                {badge}
+              </Badge>
+            ))}
+          </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };

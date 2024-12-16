@@ -11,7 +11,7 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-export default [
+const config = [
   {
     ignores: [
       ".next/**",
@@ -27,9 +27,12 @@ export default [
     rules: {
       "prettier/prettier": "error",
       "arrow-body-style": "off",
-      "prefer-arrow-callback": "off"
+      "prefer-arrow-callback": "off",
+      "@typescript-eslint/ban-ts-comment": "off"
     } 
   },
   prettier,
   eslintPluginPrettier
 ];
+
+export default config;

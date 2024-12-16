@@ -11,7 +11,7 @@ export const DATA = {
     "Software Engineer, AI Enthusiast, SaaS Innovator, and community builder with a passion for leveraging Artificial Intelligence, SaaS, and Social Media to create impactful tools and thriving tech ecosystems.",
   summary:
     "I am Santiago Sarabia, a Software Engineer, AI Enthusiast, SaaS Innovator, and community builder with a passion for leveraging Artificial Intelligence, SaaS, and Social Media to create impactful tools and thriving tech ecosystems. As a dynamic leader and developer, I focus on empowering creators, businesses, and innovators—particularly in Latin America—to unlock new possibilities and scale global connections.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.webp",
   skills: [
     "Python",
     "TypeScript",
@@ -73,7 +73,7 @@ export const DATA = {
       badges: [],
       location: "Remote/Hybrid",
       title: "Product Engineer",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/inbound-tools.webp", // Add logo URL
       start: "September 2024",
       end: "Present",
       description:
@@ -85,7 +85,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Founding Engineer",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/squads-ventures.webp", // Add logo URL
       start: "June 2024",
       end: "Present",
       description:
@@ -97,7 +97,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Co-Founder & CEO",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/boring.webp", // Add logo URL
       start: "September 2023",
       end: "Present",
       description:
@@ -109,7 +109,7 @@ export const DATA = {
       badges: [],
       location: "Hybrid",
       title: "Product Engineer",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/boris-returns.webp", // Add logo URL
       start: "June 2024",
       end: "September 2024",
       description:
@@ -121,7 +121,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Fullstack AI Engineer",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/domu.webp", // Add logo URL
       start: "April 2023",
       end: "September 2023",
       description:
@@ -133,7 +133,7 @@ export const DATA = {
       school: "Universidad del Valle",
       href: "https://univalle.edu",
       degree: "Bachelor's in Systems Engineering",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/univalle.webp", // Add logo URL
       start: "2020",
       end: "2024",
     },
@@ -141,7 +141,7 @@ export const DATA = {
       school: "Makers Fellowship",
       href: "https://makers.com",
       degree: "Coding Fellowship",
-      logoUrl: "", // Add logo URL
+      logoUrl: "/makers-fellowship.webp", // Add logo URL
       start: "2023",
       end: "2023",
     },
@@ -149,7 +149,7 @@ export const DATA = {
       school: "deeplearning.AI",
       href: "http://deeplearning.ai",
       degree: "Deep Learning Specialization",
-      logoUrl: "", // Add logo URL
+      logoUrl: "./deep-learning-ai.webp", // Add logo URL
       start: "2023",
       end: "2023",
     },

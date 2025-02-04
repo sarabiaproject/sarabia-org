@@ -68,16 +68,16 @@ export const DATA = {
 
   work: [
     {
-      company: "Inbound Tools",
-      href: "https://inbound-tools.com",
+      company: "Boring Inc.",
+      href: "https://boring.lat",
       badges: [],
       location: "Remote/Hybrid",
-      title: "Product Engineer",
-      logoUrl: "/inbound-tools.webp",
-      start: "September 2024",
+      title: "Co-Founder & CEO",
+      logoUrl: "/boring.webp",
+      start: "September 2023",
       end: "Present",
       description:
-        "Key contributor to AI-driven product development at Inbound Tools, delivering innovative solutions under SquadS Ventures.",
+        "Leading AI-driven innovation as Co-Founder & CEO, spearheading the development of cutting-edge web and mobile applications. Architecting and implementing AI solutions while managing technical strategy and product development for global clients.",
     },
     {
       company: "SquadS Ventures",
@@ -87,9 +87,21 @@ export const DATA = {
       title: "Founding Engineer",
       logoUrl: "/squads-ventures.webp",
       start: "June 2024",
-      end: "Present",
+      end: "January 2025",
       description:
-        "Spearheading the creation of innovative tech startups, including Inbound Tools and Boris Returns, leveraging SaaS and AI to build scalable businesses.",
+        "Spearheaded the creation of innovative tech startups, including Inbound Tools and Boris Returns, leveraging SaaS and AI to build scalable businesses.",
+    },
+    {
+      company: "Inbound Tools",
+      href: "https://inbound-tools.com",
+      badges: [],
+      location: "Remote/Hybrid",
+      title: "Product Engineer",
+      logoUrl: "/inbound-tools.webp",
+      start: "September 2024",
+      end: "January 2025",
+      description:
+        "Key contributor to AI-driven product development at Inbound Tools, delivering innovative solutions under SquadS Ventures.",
     },
     {
       company: "Boris Returns",
@@ -102,18 +114,6 @@ export const DATA = {
       end: "September 2024",
       description:
         "Engineered SaaS products for logistics optimization under SquadS Ventures, focusing on scalability and operational efficiency.",
-    },
-    {
-      company: "Boring Inc.",
-      href: "https://boring.lat",
-      badges: [],
-      location: "Remote",
-      title: "Co-Founder & CEO",
-      logoUrl: "/boring.webp",
-      start: "September 2023",
-      end: "Present",
-      description:
-        "As the sole technical lead and CTO, developed and managed AI-integrated web and mobile applications, delivering smart automation and tailored solutions to clients worldwide.",
     },
     {
       company: "Domu",
